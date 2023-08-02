@@ -1,0 +1,1073 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,600;1,500&family=Shadows+Into+Light&family=Tilt+Prism&display=swap');
+
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Tilt Prism', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+    background-color: rgb(255, 238, 205);
+}
+
+
+/*--------HEADER-------*/
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__nav{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+}
+
+.header__nav img{
+    height: 10vh;
+    width: auto;
+    margin: 5px;
+
+}
+.header__nav__ul{
+    list-style: none;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header__nav__ul--li{
+    margin: 5px;
+    transition: 1s;
+}
+
+.header__nav__ul--li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: 5px 20px;
+}
+.header__nav__ul--li:hover{
+    background-color: rgba(251, 90, 31, 0.493);
+}
+
+
+/*--------MAIN--------*/
+
+.hero{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url("../img/fondobarber.jpg");
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero__titulo{
+    border: 2px solid white;
+    width: 80%;
+    transition: 1s;
+    box-shadow: 2px 2px 4px 2px rgba(251, 90, 31, 0.493);
+    border-radius: 2px
+}
+.hero__titulo:hover{
+    box-shadow: 2px 2px 4px 2px rgba(251, 90, 31, 0.493),2px 2px 4px 2px rgba(251, 90, 31, 0.493);
+}
+
+.hero__titulo--h1{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 7em;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    margin: 5px;
+    text-shadow: 2px 3px 2px rgba(251, 90, 31, 0.493);
+    transition: 1s;
+}
+.hero__titulo--h1:hover{
+    text-shadow: 3px 3px 5px rgba(247, 79, 18, 0.542),2px 3px 2px rgba(247, 79, 18, 0.558);
+}
+
+.hero__bienvenidos{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.275);
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+.hero__bienvenidos--p{
+    font-size: 30px;
+    margin: 30px;
+    color: white;
+    font-weight: 200;
+    font-family: 'Lobster', cursive;
+}
+
+.hero__boton{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 2s;
+}
+.hero__boton:hover{
+    background-color: rgba(251, 90, 31, 0.493);
+}
+
+.hero__boton--reserva{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: italic;
+    color: white;
+    margin: 5px 35px;
+}
+
+.nosotros{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url("../img/fondobarber.jpg");
+    color: white;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros__texto{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.193);
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.nosotros__texto--p{
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+.nosotros__info{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.145);
+    border: 2px solid white;
+    box-shadow: 1px 4px 21px -3px rgba(251, 90, 31, 0.556);
+    -webkit-box-shadow: 1px 4px 21px -3px rgba(251, 90, 31, 0.533);
+    -moz-box-shadow: 1px 4px 21px -3px rgba(251, 90, 31, 0.558);
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    transition: 2s;
+}
+.nosotros__info:hover{
+    box-shadow: 1px 4px 21px 0px rgb(246, 77, 16);
+    -webkit-box-shadow: 1px 4px 21px 0px rgb(250, 81, 19);
+    -moz-box-shadow: 1px 4px 21px 0px rgb(252, 86, 26);
+}
+
+.nosotros__info--img{
+    width: 200px;
+    height: 300px;
+    box-shadow: 1px 4px 21px 0px rgba(0,0,0,0.81);
+    -webkit-box-shadow: 1px 4px 21px 0px rgba(0,0,0,0.81);
+    -moz-box-shadow: 1px 4px 21px 0px rgba(0,0,0,0.81);
+}
+
+
+.nosotros__info__div--h2{
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+.nosotros__info__div--p{
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+.nosotros__contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nosotros__contacto__div{
+    margin: 30px;
+}
+.nosotros__contacto__div--map{
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.351);
+}
+
+.nosotros__direccion{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nosotros__direccion__div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nosotros__direccion__horario{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nosotros__direccion__div--img{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.nosotros__direccion__horario--img{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.nosotros__direccion__div--h3{
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+.nosotros__direccion__horario--h3{
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+.nosotros__boton{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros__boton--a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: italic;
+    color: white;
+    margin: 5px 35px;
+    padding: 5px 20px;
+    background-color: black;
+    transition: 2s;
+}
+.nosotros__boton--a:hover{
+    background-color: rgba(177, 48, 19, 0.703);
+}
+
+.servicios{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url("../img/fondobarber.jpg");
+    color: white;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios__tarjetas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicios__titulo{
+    border: 2px solid white;
+    width: 80%;
+    box-shadow: 2px 2px 4px 2px rgba(251, 90, 31, 0.493);
+    margin: 50px;
+    transition: 1s;
+}
+.servicios__titulo:hover{
+    box-shadow: 2px 2px 4px 2px rgba(251, 90, 31, 0.493),2px 2px 4px 2px rgba(251, 90, 31, 0.493);
+}
+
+.servicios__titulo--h2{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 6em;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-shadow: 2px 3px 2px rgba(251, 90, 31, 0.493);
+    transition: 1s;
+}
+.servicios__titulo--h2:hover{
+    text-shadow: 3px 3px 5px rgba(247, 79, 18, 0.542),2px 3px 2px rgba(247, 79, 18, 0.558);
+}
+
+.servicios__caja{
+    background-color: rgba(0, 0, 0, 0.159);
+    width: 235px;
+    height: 320px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.493);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.servicios__caja:hover{
+    background-color: rgba(251, 90, 31, 0.675);
+    transform: scale(1.1);
+}
+
+.servicios__caja--img{
+    width: 235px;
+    height: 255px;
+    filter: contrast(120%);
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.servicios__caja--h3{
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+    margin-top: 5px;
+}
+
+.servicios__caja--precio{
+    font-size: 25px;
+    color: white;
+    font-weight: 200;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.493);
+}
+
+
+.galeria{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url("../img/fondobarber.jpg");
+    color: white;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria__titulo{
+    border: 2px solid white;
+    width: 90%;
+    box-shadow: 2px 2px 4px 2px rgba(251, 90, 31, 0.493);
+    margin: 50px;
+    transition: 2s;
+}
+.galeria__titulo:hover{
+    box-shadow: 2px 2px 4px 2px rgba(248, 82, 22, 0.55),2px 2px 4px 2px rgba(251, 84, 23, 0.647);
+}
+
+.galeria__titulo--h1{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-shadow: 2px 3px 2px rgba(251, 90, 31, 0.493);
+    transition: 2s;
+}
+.galeria__titulo--h1:hover{
+    text-shadow: 2px 3px 2px rgba(254, 82, 19, 0.496),2px 3px 2px rgba(254, 82, 19, 0.504);
+}
+
+.galeria__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px 300px;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.galeria__item {
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.58);
+    transition: 0.5s;
+}
+.galeria__item:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 2px 22px 0px rgba(218,104,15,0.86);
+    -webkit-box-shadow: 0px 2px 22px 0px rgba(218,104,15,0.86);
+    -moz-box-shadow: 0px 2px 22px 0px rgba(218,104,15,0.86);
+}
+.galeria__item--img {
+    width: 100%;
+    height: 100%;
+}
+
+.formulario{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url("../img/fondobarber.jpg");
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(251, 90, 31, 0.709);
+}
+
+.formulario__ins{
+    background-color: rgba(0, 0, 0, 0.41);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px
+}
+
+.formulario__registro{
+    background-color: rgba(0, 0, 0, 0.41);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.formulario__mensaje{
+    background-color: rgba(0, 0, 0, 0.41);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/*--------FOOTER--------*/
+.footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 75px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo--img{
+    width: 60px;
+    margin-left: 15px;
+}
+
+.footer__enlaces__a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px
+}
+
+.footer__enlaces__a--img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    transition: 1s;
+}
+.footer__enlaces__a--img:hover{
+    transform: scale(1.4);
+}
+
+
+
+/*----------MEDIA QUERYS----------*/
+
+@media screen and (max-width:1240px){
+    .formulario__ins{
+        width: 350px;
+        height: 450px;
+    }
+    
+    .formulario__registro{
+        width: 350px;
+        height: 450px;
+    }
+    
+    .formulario__mensaje{
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1180px){
+    .servicios__titulo--h2{
+        font-size: 5.5em;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .servicios__titulo--h2{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width:1090px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    .formulario__ins{
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+    .formulario__registro{
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+    .formulario__mensaje{
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1020px){
+    .hero__titulo--h1{
+        font-size: 6.5em;
+    }
+}
+
+@media screen and (max-width:950px){
+    .hero__titulo--h1{
+        font-size: 6em;
+    }
+    .nosotros__texto--p{
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .servicios__titulo--h2{
+        font-size: 4.5em;
+    }
+}
+
+@media screen and (max-width:930px){
+    .nosotros__info{
+        width: auto;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:890px){
+    .servicios__titulo--h2{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width:880px){
+    .hero__titulo--h1{
+        font-size: 5em;
+    }
+    
+}
+
+@media screen and (max-width:850px){
+    .galeria__titulo--h1{
+        font-size: 5.5rem;
+    }
+    .galeria__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px 300px;
+    }
+    .img-9{
+        grid-column: span 2;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    .servicios__titulo--h2{
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width:740px){
+    .hero__titulo--h1{
+        font-size: 4.5em;
+    }
+    .footer__caja--p{
+        margin: auto;
+        font-size: 14px;
+    }
+    .hero__bienvenidos--p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:705px){
+    .servicios__titulo--h2{
+        font-size: 3em;
+    }
+    .servicios__caja{
+        width: 210px;
+        height: 290px;
+        margin: 30px;
+    }
+    .servicios__caja--img{
+        width: 210px;
+        height: 229px;
+    }
+    .servicios__caja--h3{
+        font-size: 25px;
+    }
+    .servicios__caja--precio{
+        font-size: 20px;
+    }
+    .galeria__titulo--h1{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:625px){
+    .hero__titulo--h1{
+        font-size: 4em;
+    }
+    .nosotros__texto--p{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .nosotros__info__div--h2{
+        font-size: 22px;
+        font-weight: 200;
+    }
+    
+    .nosotros__info__div--p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .nosotros__info__div{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__logo--img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+    .footer__caja--p{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .galeria__titulo--h1{
+        font-size: 4.5rem;
+    }
+    .galeria__grid{
+        grid-auto-rows: 250px 250px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .servicios__titulo--h2{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width:550px){
+    .hero__titulo--h1{
+        font-size: 3.5em;
+    }
+    .footer__logo--img{
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+    
+    .footer__enlaces__a--img{
+        height: 30px;
+        width: 30px;
+    }
+    .header__nav__ul--li a{
+        font-size: 15px;
+        margin: 5px 15px;}
+}
+
+@media screen and (max-width:530px){
+    .nosotros__info{
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .hero{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+        url(../img/fondoresponsive.png);
+        background-size: 70% 70%;
+        background-color: rgb(0, 0, 0);
+    }
+    .hero__titulo{
+        background-color: rgba(255, 255, 255, 0.087);
+    }
+    .hero__titulo--h1{
+        font-size: 3em;
+    }
+    .hero__bienvenidos{
+        background-color: rgba(255, 255, 255, 0.131);
+    }
+    .hero__boton{
+        background-color: rgba(255, 255, 255, 0.773);
+    }
+    .hero__boton--reserva{
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+        margin: 5px 30px;
+    }
+    .hero__bienvenidos--p{
+        font-size: 20px;
+        margin: 20px;
+        font-weight: 100;
+    }
+    .nosotros{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+        url(../img/fondoresponsive.png);
+        background-size: 70% 70%;
+        background-color: rgb(0, 0, 0);
+    }
+    .nosotros__texto{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .nosotros__info{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .nosotros__contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nosotros__direccion__div{
+        background-color: rgba(255, 255, 255, 0.124);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .nosotros__direccion__horario{
+        background-color: rgba(255, 255, 255, 0.124);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .nosotros__direccion{
+        width: auto;
+    }
+    .nosotros__boton--a{
+        font-weight: 600;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.591);
+    }
+    .servicios{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+        url(../img/fondoresponsive.png);
+        background-size: 70% 70%;
+        background-color: rgb(0, 0, 0);
+    }
+    .servicios__titulo{
+        background-color: rgba(255, 255, 255, 0.134);
+    }
+    .servicios__caja{
+        background-color: rgba(255, 255, 255, 0.045);
+    }
+    .galeria{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+        url(../img/fondoresponsive.png);
+        background-size: 70% 70%;
+        background-color: rgb(0, 0, 0);
+    }
+    .galeria__titulo{
+        background-color: rgba(255, 255, 255, 0.138);
+    }
+    .formulario{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+        url(../img/fondoresponsive.png);
+        background-size: 70% 70%;
+        background-color: rgb(0, 0, 0);
+    }
+    .formulario__ins{
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.104);
+    }
+    .formulario__registro{
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.104);
+    }
+    .formulario__mensaje{
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.104);
+    }
+    .footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__logo--img{
+        width: 43px;
+        height: 40px;
+        margin: 0;
+    }
+    .footer__caja--p{
+        margin-bottom: 5px;
+    }
+    .header__nav__ul--li a{
+        font-size: 15px;
+        margin: 5px 5px;
+    }
+    .servicios__titulo--h2{
+        font-size: 2em;
+    }
+    .galeria__titulo--h1{
+        font-size: 4.5rem;
+    }
+    .galeria__grid{
+        grid-auto-rows: 220px 220px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .galeria__titulo--h1{
+        font-size: 4.5rem;
+    }
+    .galeria__grid{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+    .img-9{
+        grid-column: span 1;
+    }
+    .formulario__ins{
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .formulario__registro{
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .formulario__mensaje{
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:440px){
+    .hero__titulo--h1{
+        font-size: 3em;
+    }
+    .hero__titulo{
+        border: 1px solid white;
+    }
+    .nosotros__direccion__div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .nosotros__direccion__horario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .nosotros__direccion__div--img{
+        margin-right: 0px;
+    }
+    
+    .nosotros__direccion__horario--img{
+        margin-right: 0px;
+    }
+    .servicios__caja{
+        width: 200px;
+        height: 275px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .servicios__caja--img{
+        width: 200px;
+        height: 210px;
+    }
+    
+    
+    .servicios__caja--h3{
+        font-size: 20px;
+    }
+    
+    .servicios__caja--precio{
+        font-size: 15px;
+    }
+    .footer__caja--p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:390px){
+    .formulario__ins{
+        width: 320px;
+        height: 430px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+    .formulario__registro{
+        width: 320px;
+        height: 430px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+    .formulario__mensaje{
+        width: 320px;
+        height: 430px;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .header__nav__ul--li a{
+        font-size: 13px;
+        margin: 0;
+        margin-right: 5px;
+    }
+}
+
+
+@media screen and (max-width:350px){
+    .hero__titulo--h1{
+        font-size: 3em;
+    }
+    .hero__bienvenidos--p{
+        font-size: 18px;
+    }
+    .hero__boton--reserva{
+        font-size: 15px;
+        margin: 5px 25px;
+    }
+    .servicios__caja{
+        width: 185px;
+        height: 260px;
+        
+    }
+    .servicios__caja--img{
+        width: 185px;
+        height: 195px;
+    }
+}
+
