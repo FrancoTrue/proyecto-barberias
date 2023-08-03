@@ -781,7 +781,9 @@ body{
     .hero{
         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
         url(../img/fondoresponsive.png);
-        background-size: 70% 70%;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
         background-color: rgb(0, 0, 0);
     }
     .hero__titulo{
@@ -810,7 +812,9 @@ body{
     .nosotros{
         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
         url(../img/fondoresponsive.png);
-        background-size: 70% 70%;
+        background-size: 70% 60%;
+        background-position: center;
+        background-attachment: none;
         background-color: rgb(0, 0, 0);
     }
     .nosotros__texto{
@@ -851,7 +855,9 @@ body{
     .servicios{
         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
         url(../img/fondoresponsive.png);
-        background-size: 70% 70%;
+        background-size: 70% 60%;
+        background-position: center;
+        background-attachment: none;
         background-color: rgb(0, 0, 0);
     }
     .servicios__titulo{
@@ -863,7 +869,9 @@ body{
     .galeria{
         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
         url(../img/fondoresponsive.png);
-        background-size: 70% 70%;
+        background-size: 70% 60%;
+        background-position: center;
+        background-attachment: none;
         background-color: rgb(0, 0, 0);
     }
     .galeria__titulo{
@@ -872,7 +880,9 @@ body{
     .formulario{
         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
         url(../img/fondoresponsive.png);
-        background-size: 70% 70%;
+        background-size: 70% 60%;
+        background-position: center;
+        background-attachment: none;
         background-color: rgb(0, 0, 0);
     }
     .formulario__ins{
@@ -960,7 +970,7 @@ body{
 
 @media screen and (max-width:440px){
     .hero__titulo--h1{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .hero__titulo{
         border: 1px solid white;
@@ -1051,7 +1061,7 @@ body{
 
 @media screen and (max-width:350px){
     .hero__titulo--h1{
-        font-size: 3em;
+        font-size: 2em;
     }
     .hero__bienvenidos--p{
         font-size: 18px;
